@@ -32,7 +32,7 @@ for index, new_element in new_file.iterrows():
 
     # procura os itens com o mesmo part number
     old_element = old_file[
-        old_file[COLUMN_MANUFACTURER_1] == new_element[COLUMN_MANUFACTURER_1]
+        old_file[COLUMN_MANUFACTURER_PART_NUMBER_1] == new_element[COLUMN_MANUFACTURER_PART_NUMBER_1]
     ]
 
     # quando econtra adiciona a lista com as informacoes importantes e a quantidade necessaria para se fazer NUM_PLACAS
